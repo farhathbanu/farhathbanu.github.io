@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CARS</title>
+
+<style type="text/css">
+</head>
+<body>
+
+	*{margin: 0;
+		padding: 0;
+	}
+
+	div#container {
+	    width: 906px;
+	    margin: 0 auto;
+	}
+    
+	div#header {
+	    border: 3px solid black;
+	    width: 100%;
+	    height: 192px;
+	    background: brown;
+	    box-sizing: border-box;
+	}
+	#header img {
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin: 3% 1% 3% 4%;
+	    
+	}
+
+	img {
+    height: 118px;
+    width: 145px;
+    border: 9px solid yellow;
+    }   
+
+	#header ul {
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin: 5% 0% 2% 17%;
+	}
+
+	#header ul li {
+	    display: inline-block;
+	   	width: 146px;
+	    height: 45px;
+	    text-align: center;
+	    border-radius: 13px;
+	    border: 2px solid yellow;
+	    box-sizing: border-box;
+	    margin: 0px 7px;
+	    padding: 11px;
+	    font-family: cursive;
+	    color: white;
+	    font-size: 15px;
+	    font-style: oblique;
+	    font-weight: bolder;
+	}
+
+    p {
+        margin: 0;
+    } 
+
+    p img {
+        position: relative;
+        border: none;
+        margin: -189px 0px 61px 219px;
+    }
+
+    div#spinner {
+        animation-name: spinner;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        transform-style: flat;
+        text-align: left;
+    }
+
+    @keyframes spinner{
+        from {transform: rotate(0deg);}
+        to {transform: rotateY(180deg);}
+    }
+
+    div#left {
+        display: inline-block;
+        background: coral;
+        width: 37.56%;
+        height: 340px;
+        vertical-align: top;
+        border: 2px solid black;
+        margin: 1% 0% 1% 0%;
+        box-sizing:border-box;
+    }
+    
+    #left h1 {
+        font-family: cursive;
+        font-size: 21px;
+        margin: 2px 7px -8px 13px;
+    }
+    
+    #left p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 15px;
+        font-family: cursive;
+    }
+
+
+    div#right {
+        display: inline-block;
+        background: bisque;
+        width: 62%;
+        height: 340px;
+        border: 2px solid black;
+        vertical-align: top;
+        margin: 1% 0.0% 1% 0%;
+        padding: 2%;
+        box-sizing: border-box;
+
+    }
+
+    #right h2  {
+        font-family: cursive;
+        font-size: 21px;
+        margin: -15px 2px 1px -5px;
+    }
+
+    #right p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 1px;
+        font-family: cursive;
+    }
+    
+    video{
+        box-sizing: border-box;
+        border: 2px grey solid;
+        border-radius: 6px;
+        padding: 32px 9px;
+        width: 70%;
+        box-shadow: 5px 2px 19px;
+        margin: 23px 1px 1px 144px;
+    }
+
+    div#boxes{
+    	text-align: center;
+    	margin: 7px 9px 7px 23px;
+    }
+
+    #box1, #box2, #box3, #box4{
+    	border: 2px solid black;
+    	width: 148px;
+    	height: 60px;
+    	margin: 10px;
+    	display: inline-block;
+    	background-color: rgb(222, 127, 136)
+    }
+
+
+    #a {
+        margin: 20px;
+        margin-right: 9px;
+    }
+
+    #box1 a img {
+        height: 66px;
+        width: 97px;
+        padding: 3px;
+        border: none;
+    }
+    
+    div#box1a:hover {
+        transform: translate(-147px, 0px)
+    }
+    div#box1b:hover {
+        transform: translate(149px, 0px)
+    }
+
+    #box2 a img {
+        height: 66px;
+        width: 97px;
+        padding: 3px;
+        border: none;
+    }
+
+    div#box2a:hover {
+        transform: translate(-147px, 0px)
+    }
+    div#box2b:hover {
+        transform: translate(149px, 0px)
+    }
+    #box3 a img {
+        height: 66px;
+        width: 97px;
+        padding: 3px;
+        border: none;
+    }
+
+    div#box3a:hover {
+        transform: translate(-147px, 0px)
+    }
+    div#box3b:hover {
+        transform: translate(149px, 0px)
+    }
+
+    #box4 a img {
+        height: 66px;
+        width: 97px;
+        padding: 3px;
+        border: none;
+    }
+
+    div#box4a:hover {
+        transform: translate(-147px, 0px)
+    }
+    div#box4b:hover {
+        transform: translate(149px, 0px)
+    }
+    #box1a, #box1b, #box2a, #box2b, #box3a, #box3b, #box4a, #box4b{
+    	width: 18px;
+    	height: 19px;
+    	border: 2px solid #FFC107;
+    	border-radius: 40px;
+    	position: absolute;
+    	background-color: #FFC107;
+    }
+
+    #box1a, #box2a, #box3a, #box4a{
+    	margin-top: -87px;
+        margin-left: 137px;
+    	background-color: red;
+        transition: 2s;
+    }
+   
+
+    #box1b, #box2b, #box3b, #box4b{
+    	margin-top: -29px;
+        margin-left: -12px;
+    	background-color: red;
+        transition: 2s;
+    }
+
+    div#center {
+        display: inline-block;
+        background: #863641;
+        width: 100%;
+        height: 200px;
+        vertical-align: top;
+        border: 2px solid black;
+        margin: 1% 0% 1% 0%;
+        box-sizing:border-box;
+
+    }
+
+
+    #center p{
+        font-family: cursive;
+        font-size: 13px;
+        color:yellow;
+        column-count: 3;
+        margin-left: 17px;
+        margin-right: 17px;
+        padding: 5px;
+        text-align: justify;
+        column-gap: 28px;
+        column-rule: 4px solid pink;
+        margin-top: 12px;
+    }
+
+    div#form1 {
+        display: inline-block;
+        width: 425px;
+        vertical-align: top;
+        height: 262px;
+        box-sizing: border-box;
+        background-color: #6ed489;
+        border: 2px solid black;
+        border-radius: 12px;
+        margin: 1% 1% 1% 0%;
+    }
+    #form1 legend {
+        font-size: 21px;
+        font-family:cursive;
+        margin: 9px 1px 1px 124px;
+        color: yellow;
+    }
+    
+    #form1 ul {
+        padding-bottom: 7px;
+        float: right;
+        margin-bottom: 55px;
+        font-family: cursive;
+        font-size: 13.5px;
+        color: yellow;
+        text-decoration: blink;
+    }
+ 
+    #form1 label {
+        float: left;
+        padding: 2px;
+        position: absolute;
+        margin-left: -155px;
+    }   
+
+    #form1 input[type="text"] {
+        float: right;
+        padding-top: 3px;
+        padding-right: 42px;
+        width: 178px;
+        height: 19px;
+    }
+
+    #form1 textarea {
+        float: right;
+        width: 218px;
+        position: absolute;
+        margin-top: -16px;
+    }
+
+    #form1 ul#type {
+        position: absolute;
+        margin: 147px 0px 0px 100px;
+    }
+
+    div#form2 {
+        display: inline-block;
+        width: 449px;
+        vertical-align: top;
+        height: 262px;
+        box-sizing: border-box;
+        background-color: green;
+        border-radius: 12px;
+        border: 2px solid black;
+        margin: 1% 0% 0% 2%
+    }
+
+    
+    #form2 legend {
+        font-size: 21px;
+        font-family: cursive;
+        color: yellow;
+        text-align: center;
+        padding-bottom: 4px;
+    }
+    #form2 ul {
+        float: left;
+        padding: 1px;
+        font-size: 13.5px;
+        font-family: cursive;
+        color: yellow;
+    }
+
+    #form2 label {
+        margin-right: 25px;
+    }
+
+    #form2 input[type="Reset"] {
+        margin: 18px 1px 0px 146px;
+    }
+    div#footer {
+        width: 100%;
+        height: 65px;
+        display: inline-block;
+        /*margin-left: -1px;*/
+        box-sizing: border-box;
+        background: rgba(109, 28, 56, 0.86);
+        border: 2px solid black;
+        margin: 1% 0;
+        /*position: absolute;*/
+        /*margin-top: 424px;*/
+        text-align: center;
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 13px;
+        font-family: cursive;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    a {
+    font-size: 18px;
+    color: yellow;
+    }
+
+    
+         
+</style>    
+<div id="container">
+	<div id="header"> 
+        <img src="http://clipartix.com/wp-content/uploads/2016/08/Cars-fast-car-clipart-free-clipart-images-2.png">
+    
+    
+    
+    <ul>
+		<li>Home</li>
+		<li>Photo Gallery</li>
+		<li>Contact</li>
+
+	</ul>
+	</div>
+<div id="spinner">
+
+<p><img src="carz.png" border="none"></p>
+</div>
+
+<div id="left" >
+	<h1>What is Lorem Ipsum?</h1>
+	<p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.</p>
+
+
+</div>
+<div id="right">
+	<h2>Where does it come from?</h2>
+	<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+    <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+		
+    </p>
+
+</div>
+
+<br>
+<video width="500" height="400" controls loop autoplay>
+<source src="BMW.mp4" type="video/mp4">
+</video>
+<br>
+<br>
+<div id="boxes">
+<div id="box1"><a href="http://www.animatedimages.org/cat-car-racing-1045.htm"><img src="http://www.animatedimages.org/data/media/1045/animated-car-racing-image-0003.gif" alt="animated-car-racing-image-0003"/></a>
+	<div id="box1a"></div>
+	<div id="box1b"></div>
+</div>			
+
+<div id="box2"><a href="http://www.animatedimages.org/cat-car-racing-1045.htm"><img src="http://www.animatedimages.org/data/media/1045/animated-car-racing-image-0003.gif" alt="animated-car-racing-image-0003"/></a>
+	<div id="box2a"></div>
+	<div id="box2b"></div>
+</div>
+
+<div id="box3"><a href="http://www.animatedimages.org/cat-car-racing-1045.htm"><img src="http://www.animatedimages.org/data/media/1045/animated-car-racing-image-0003.gif" alt="animated-car-racing-image-0003"/></a>
+	<div id="box3a"></div>
+	<div id="box3b"></div>
+</div>
+
+<div id="box4"><a href="http://www.animatedimages.org/cat-car-racing-1045.htm"><img src="http://www.animatedimages.org/data/media/1045/animated-car-racing-image-0003.gif" alt="animated-car-racing-image-0003"/></a>
+	<div id="box4a"></div>
+	<div id="box4b"></div>
+</div>
+</div>
+
+<div id="center">
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.    
+        </p>
+
+
+</div>
+
+<div id="form1">
+    <form>
+        <fieldset>
+            <legend>Feedback Form</legend>
+            <ul> 
+                <label>Name:</label>    
+                <input type="text" name="Name:">
+                <br>
+                <br>
+                <LABEL>E-mail:</LABEL>
+                <input type="text" name="E-mail:">
+                <br>
+                <br>
+                <label>Contact Number:</label>    
+                <input type="text" name="Contact Number:">
+                <br>
+                <br>
+                <label>Comments:</label>    
+                <br>
+                <textarea name="Comments:"></textarea></ul>
+                <br>
+                <br>
+                <ul id="type">
+                <input type="Reset" name="Reset">
+                <input type="Submit" name="Submit"></ul>
+        </fieldset>
+    </form>
+</div>
+
+<div id="form2">
+    <form>
+        <fieldset> 
+            <legend>Auto Buying / Lease Survey</legend>
+            <ul>
+            <label>What is your gender?</label>
+            <br>
+            <input type="radio" name="gender" value="Female" checked="">
+            <label>Female</label>     
+            <input type="radio" name="gender" value="Male" checked="">
+            <label>Male</label>
+            <br>
+            <br>
+            <label>Which cateogory includes your age?</label>  
+        
+            <select name="Age">
+                <option value="age">Select</option>    
+                <option value="cateogory1">18-30</option> 
+                <option value="cateogory1">31-45</option> 
+                <option value="cateogory1">46-60</option> 
+                <option value="cateogory1">61+</option> 
+            </select>    
+            <br>
+            <br>
+            <label>Did you BUY or LEASE your new car? </label>
+            <br> 
+            <input type="radio" name="car" value="Bought" checked="">
+            <label>Bought</label>  
+            <input type="radio" name="car" value="Leased" checked="">
+            <label>Leased</label> </ul>   
+            <br>
+            <br>
+            <input type="Reset" name="Reset">
+            <input type="Submit" name="Submit">
+</fieldset>
+</form>    
+</div>
+<div id="footer">
+    <h3>@ for any inquiry please fill the above feedback form or send me an email to:</h3>
+    
+    <img src="emailimage.gif" alt="Email Icon"
+    style="width:21px; height:19px; border: none;" >
+
+    <a href=mailto:carz@gmail.com subject=carsz"> carz@gmail.com </a>
+
+</div>
+
+
+</body>
+</html>
