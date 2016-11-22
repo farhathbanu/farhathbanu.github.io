@@ -1,0 +1,443 @@
+body {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#home {
+    background: url(../images/homebg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+#home .container {
+    padding: 200px 0;
+}
+
+#home h1 {
+    font-size: 72px;
+    color: white;
+    font-weight: 100;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+#home h3 {
+    font-size: 24px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#home i {
+    font-size: 50px;
+    color: white;
+}
+
+#about {
+    background: url(../images/aboutbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+
+#about .container {
+    padding: 120px 0;
+}
+
+#about h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 100;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+#about p {
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    padding: 20px;
+}
+
+#about hr {
+    width: 10%;
+}
+
+#services {
+    color: #873fb5;
+    font-weight: 100;
+}
+
+#services .service-title {
+    padding: 50px 0;
+}
+
+#services i {
+    font-size: 48px;
+    color: #c1c1c1;
+    border-right: 2px solid #c1c1c1;
+    padding-right: 20px;
+    float: left;
+}
+
+#services h2 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+#services h4 {
+    color: #873fb5;
+    margin-top: -8px;
+}
+
+#services .service-header {
+    display: inline-block;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+#services .container .coll {
+    padding-bottom: 40px;
+}
+
+#skills {
+    background: url(../images/skillsbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 467px;
+}
+
+#skills .skills-left {
+    padding: 110px 0;
+}
+
+#skills h2 {
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+}
+
+#skills h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    padding-bottom: 20px;
+    margin-top: -10px;
+}
+
+#skills p {
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+#skills .button1 {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#skills .button1:hover {
+    color: #873fb5;
+    border-bottom: 3px solid #873fb5;
+}
+
+#skills .button2 {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#skills .button2:hover {
+    color: #873fb5;
+    border-bottom: 3px solid #873fb5;
+}
+
+#skills .skill-right {
+    padding: 100px 50px;
+}
+
+#skills h4 {
+    color: white;
+}
+
+#skills .progress {
+    height: 26px;
+    opacity: .75;
+}
+
+#skills .progress-bar {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#793a94+0,8d4563+100 */
+    background: #793a94;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #793a94 0%, #8d4563 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #793a94 0%, #8d4563 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #793a94 0%, #8d4563 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#793a94', endColorstr='#8d4563', GradientType=1);
+    /* IE6-9 */
+}
+
+#portfolio .portfolio-header {
+    color: #873fb5;
+    font-weight: 100;
+    padding: 50px 0;
+}
+
+#portfolio .portfolio-thumb {
+    height: 270px;
+    max-width: 390px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .col-md-4 {
+    padding: 0;
+}
+
+#portfolio .portfolio-overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #8d4563;
+    opacity: 0;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#portfolio .portfolio-overlay h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: inline-block;
+    padding: 10px;
+}
+
+#portfolio .portfolio-overlay i {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+    opacity: .75;
+    cursor: pointer;
+}
+
+#statistics {
+    padding: 100px 0;
+}
+
+#statistics .stats1 {
+    background: url(../images/stats1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    color: white;
+    text-align: center;
+}
+
+#statistics .stats1 i {
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+#statistics .stats1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+#statistics .stats1 p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#statistics .stats2 {
+    background: url(../images/stats2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    color: white;
+    text-align: center;
+}
+
+#statistics .stats2 i {
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+#statistics .stats2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+#statistics .stats2 p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#statistics .stats3 {
+    background: url(../images/stats3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    color: white;
+    text-align: center;
+}
+
+#statistics .stats3 i {
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+#statistics .stats3 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+#statistics .stats3 p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#statistics .stats4 {
+    background: url(../images/stats4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+    color: white;
+    text-align: center;
+}
+
+#statistics .stats4 i {
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+#statistics .stats4 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+#statistics .stats4 p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#udemy {
+    background: url(../images/ehab2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 440px;
+}
+
+#udemy .container {
+    padding: 80px;
+    padding-bottom: auto 0;
+}
+
+#udemy .container img {
+    height: 90px;
+    width: 80px;
+    border-radius: 8px;
+}
+
+#udemy h3 {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+#udemy p {
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+}
+
+#contact .container {
+    padding: 80px 0;
+}
+
+#contact .form-group input {
+    background-color: #eee;
+}
+
+#contact textarea {
+    background-color: #eee;
+}
+
+#footer {
+    background: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#footer .container-fluid {
+    padding: 30px 0;
+}
+
+#footer h2 {
+    font-size: 50px;
+    color: #c1c1c1;
+    font-weight: 100;
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-top: 40px;
+}
+
+#footer .social-media i {
+    font-size: 24px;
+    color: white;
+    padding-top: 25px;
+}
+
+#endfooter p {
+    font-size: 12px;
+    color: #c1c1c1;
+    background-color: black;
+    font-weight: 100;
+    height: 43px;
+    padding-top: 15px;
+}
